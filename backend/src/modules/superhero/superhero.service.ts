@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Superhero } from './interfaces/superhero.interface';
+import { SuperheroResponseDto } from './dto/superhero-response.dto';
 
 @Injectable()
 export class SuperheroService {
@@ -11,7 +12,8 @@ export class SuperheroService {
     name: string,
     superpower: string,
     humilityScore: number,
-  ): Superhero {
+  ): SuperheroResponseDto {
+    // we have to check if the data exist before adding it
     const newSuperhero: Superhero = {
       id: this.idCounter++,
       name,
