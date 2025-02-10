@@ -1,26 +1,29 @@
 import { Injectable } from '@nestjs/common';
-import { CreateSuperheroDto } from './dto/create-superhero.dto';
-import { UpdateSuperheroDto } from './dto/update-superhero.dto';
+import { Superhero } from './interfaces/superhero.interface';
 
 @Injectable()
 export class SuperheroService {
-  create(createSuperheroDto: CreateSuperheroDto) {
-    return 'This action adds a new superhero';
+  private superheroes: Superhero[] = [];
+  private idCounter = 1;
+
+  // Add a new superhero
+  addSuperhero(
+    name: string,
+    superpower: string,
+    humilityScore: number,
+  ): Superhero {
+    const newSuperhero: Superhero = {
+      id: this.idCounter++,
+      name,
+      superpower,
+      humilityScore,
+    };
+    this.superheroes.push(newSuperhero);
+    return newSuperhero;
   }
 
-  findAll() {
-    return `This action returns all superhero`;
-  }
-
-  findOne(id: number) {
-    return `This action returns a #${id} superhero`;
-  }
-
-  update(id: number, updateSuperheroDto: UpdateSuperheroDto) {
-    return `This action updates a #${id} superhero`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} superhero`;
+  // Get all superheroes sorted by humility score
+  getAllSuperheroes(): Superhero[] {
+    return this.superheroes.sort((a, b) => b.humilityScore - a.humilityScore);
   }
 }
