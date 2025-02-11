@@ -41,7 +41,9 @@ const AddSuperheroForm = ({ onAdd }: { onAdd: () => void }) => {
       className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md"
       onSubmit={handleSubmit}
     >
-      <h2 className="text-2xl font-semibold text-center mb-4">Add Superhero</h2>
+      <h2 className="text-2xl font-semibold text-center text-gray-700 mb-4">
+        Add Superhero
+      </h2>
       <div className="mb-4">
         <label
           htmlFor="name"
