@@ -2,9 +2,16 @@
 
 ## Overview
 
-This is a full-stack application built with **NestJS** (backend) and **React** (frontend). It celebrates the superhero in all of us by allowing users to add and view superheroes sorted by their humility score. The app emphasizes the importance of humility and collaboration, reminding us that true heroes are defined not just by their powers but by their **character**.
+This is a full-stack application built with **NestJS** (backend) and **React** (frontend). It celebrates the superhero in all of us by allowing users to add and view superheroes sorted by their humility score.
+**Not all heroes wear capes. Some heroes quietly shape the world through humility and kindness. Humble Superhero App lets you celebrate real and fictional heroes—not for their strength, but for their character. Discover, rank, and appreciate the true superheroes among us!**
 
 ---
+
+## 🛠️ Tech Stack
+
+| Frontend | Backend   | Styling         | Testing | Docs       |
+| -------- | --------- | --------------- | ------- | ---------- |
+| React ⚛️ | NestJS 🚀 | Tailwind CSS 🎨 | Jest 🧪 | Swagger 📚 |
 
 ## Features ✨
 
@@ -38,6 +45,28 @@ This is a full-stack application built with **NestJS** (backend) and **React** (
 
 - Frontend: Runs on http://localhost:3000
 
+## Testing 🧪
+
+This project includes unit, integration and e2e tests for the backend. Testing ensures the application behaves as expected and helps catch bugs early.
+
+# Backend Tests
+
+- Unit and Integration Tests: Written using Jest and Supertest to test API endpoints.
+
+To run the tests:
+
+```bash
+cd backend
+npm test
+```
+
+- e2e : Written using Jest and Supertest to test API endpoints.
+
+```bash
+cd backend
+npm test:e2e
+```
+
 ## API Endpoints
 
 - **POST /superheroes**: Add a new superhero.
@@ -49,6 +78,12 @@ This is a full-stack application built with **NestJS** (backend) and **React** (
 
 - develop react app with Tailwind CSS. It includes configuration files for PostCSS and Tailwind CSS, ensuring a seamless development experience.
   ![Homepage](frontend/public/home-2.png)
+
+## API Documentation 📚
+
+The backend API is documented using **Swagger**. You can access the interactive API documentation at:
+
+👉 [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 
 ## If I Had More Time
 
@@ -88,3 +123,7 @@ While working on this project, I encountered an issue where Tailwind CSS stopped
 - **Conflict Resolution**: How to identify and resolve dependency conflicts in a Node.js project.
 - **Debugging Skills**: The value of systematic debugging and using tools like `npm ls` to identify version mismatches.
 - **Best Practices**: The need to follow best practices when integrating third-party libraries to avoid unexpected issues.
+
+```
+
+```
