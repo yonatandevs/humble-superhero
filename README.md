@@ -36,7 +36,7 @@ This is a full-stack application built with **NestJS** (backend) and **React** (
    cd backend && npm install
    npm run dev
    cd ../frontend && npm install
-   npm start
+   npm run start
    ```
 
 ## Access the Application:
@@ -57,14 +57,14 @@ To run the tests:
 
 ```bash
 cd backend
-npm test
+npm run test
 ```
 
 - e2e : Written using Jest and Supertest to test API endpoints.
 
 ```bash
 cd backend
-npm test:e2e
+npm run test:e2e
 ```
 
 ## API Endpoints
@@ -87,7 +87,7 @@ The backend API is documented using **Swagger**. You can access the interactive 
 
 ## If I Had More Time
 
-- **Database Integration**: Replace the in-memory database with a persistent database like MongoDB or PostgreSQL.
+- **Database Integration**: Replace the in-memory database with a persistent database like MongoDB or PostgreSQL (I will use TypeORM or Prisma).
 - **Authentication**: Add user authentication using JWT or OAuth to secure the API endpoints.
 - **Advanced Frontend Features**:
   - Implement editing and deleting superheroes.
@@ -97,9 +97,9 @@ The backend API is documented using **Swagger**. You can access the interactive 
 - **Performance Optimization**:
   - Optimize the API for performance using caching (e.g., Redis).
   - Implement database indexing for faster queries.
-- **CI/CD Pipeline**: Set up a CI/CD pipeline using GitHub Actions or CircleCI to automate testing and deployment.
+- **CI/CD Pipeline**: Set up a CI/CD pipeline to automate testing and deployment.
 - **Comprehensive Testing**:
-  - Write end-to-end (E2E) tests using Cypress.
+  - Write end-to-end (E2E) for the frontend.
   - Add unit and integration tests for React components using Jest and React Testing Library.
 - **Docker Compose**: Set up a `docker-compose.yml` file to run the backend, frontend, and database together in a containerized environment.
 
@@ -123,7 +123,3 @@ While working on this project, I encountered an issue where Tailwind CSS stopped
 - **Conflict Resolution**: How to identify and resolve dependency conflicts in a Node.js project.
 - **Debugging Skills**: The value of systematic debugging and using tools like `npm ls` to identify version mismatches.
 - **Best Practices**: The need to follow best practices when integrating third-party libraries to avoid unexpected issues.
-
-```
-
-```
