@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { Superhero } from './interfaces/superhero.interface';
+
 import { SuperheroResponseDto } from './dto/superhero-response.dto';
 
 @Injectable()
 export class SuperheroService {
-  private superheroes: Superhero[] = [];
+  private superheroes: SuperheroResponseDto[] = [];
   private idCounter = 1;
 
   // Add a new superhero
@@ -13,8 +13,8 @@ export class SuperheroService {
     superpower: string,
     humilityScore: number,
   ): SuperheroResponseDto {
-    // we have to check if the data exist before adding it
-    const newSuperhero: Superhero = {
+    // we have to check if the data exist before adding it but for now...
+    const newSuperhero: SuperheroResponseDto = {
       id: this.idCounter++,
       name,
       superpower,
@@ -25,7 +25,7 @@ export class SuperheroService {
   }
 
   // Get all superheroes sorted by humility score
-  getAllSuperheroes(): Superhero[] {
+  getAllSuperheroes(): SuperheroResponseDto[] {
     return this.superheroes.sort((a, b) => b.humilityScore - a.humilityScore);
   }
 }

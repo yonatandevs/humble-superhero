@@ -23,6 +23,7 @@ describe('SuperheroController', () => {
       humilityScore: 9,
     });
     expect(superhero.name).toBe('Batman');
+    expect(superhero.id).toBeDefined();
   });
 
   it('should get all superheroes sorted by humility score', () => {

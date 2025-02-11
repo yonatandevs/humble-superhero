@@ -1,15 +1,13 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "author": "Yonatan",
   "private": true,
   "dependencies": {
-    "autoprefixer": "^10.4.20",
     "cra-template": "1.2.0",
-    "postcss": "^8.5.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
-    "tailwindcss": "^3.4.17"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,8 +34,10 @@
     ]
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.0.6",
     "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3"
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17"
   }
 }

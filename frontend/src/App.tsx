@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import AddSuperheroForm from "./components/AddSuperheroForm";
 import SuperheroList from "./components/SuperheroList";
-import "./index.css";
 
+// Main App component
 const App = () => {
   const [refresh, setRefresh] = useState(false);
 
