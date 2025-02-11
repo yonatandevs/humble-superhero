@@ -47,7 +47,7 @@ This is a full-stack application built with **NestJS** (backend) and **React** (
 
 - # Tailwind CSS Integration with React
 
-- develop with Tailwind CSS with a React application. It includes configuration files for PostCSS and Tailwind CSS, ensuring a seamless development experience.
+- develop react app with Tailwind CSS. It includes configuration files for PostCSS and Tailwind CSS, ensuring a seamless development experience.
   ![Homepage](frontend/public/home-2.png)
 
 ## If I Had More Time
